@@ -4,15 +4,15 @@ import { TwitterTimelineEmbed, TwitterShareButton, TwitterTweetEmbed } from 'rea
 import SearchIcon from '@material-ui/icons/Search';
 
 
-function Widgets() {
+function RightSideBar() {
     return (
-        <div className="widgets ">
-            <div className="widgets__input">
-                <SearchIcon className="widgets__searchIcon" />
+        <div className="rightSideBar ">
+            <div className="rightSideBar__input">
+                <SearchIcon className="rightSideBar__searchIcon" />
                 <input placeholder="Search Twitter" type="text" />
             </div>
 
-            <div className="widgets__widgetContainer">
+            <div className="rightSideBar__widgetContainer">
                 <h2>What's happening</h2>
 
                 <TwitterTweetEmbed tweetId={"1402320383932502021"} />
@@ -28,4 +28,4 @@ function Widgets() {
     )
 }
 
-export default Widgets
+export default RightSideBar
