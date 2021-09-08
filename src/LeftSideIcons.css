@@ -8,7 +8,7 @@
 .sidebarOption:hover {
     background-color: #e8f5fe;
     border-radius: 30px;
-    color: var(--twitter-color);
+    color: var(--custom-color);
     transition: color 100ms ease-out;
 }
 
@@ -24,5 +24,5 @@
 }
 
 .sideOption--active {
-     color: var(--twitter-color);
+     color: var(--custom-color);
 }

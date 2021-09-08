@@ -1,6 +1,6 @@
 body {
-  --twitter-color : #50f5a3;
-  --twitter-background : #e6ecf0;
+  --custom-color : #50f5a3;
+  --custom-background : #e6ecf0;
 }
 
 .App{
