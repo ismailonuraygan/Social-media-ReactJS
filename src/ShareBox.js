@@ -1,15 +1,21 @@
 import React, { useState } from 'react'
 import { Avatar, Button } from '@material-ui/core';
 import "./ShareBox.css"
-//import { getDatabase, ref, set } from "firebase/database";
-//import { doc, setDoc } from "firebase/firestore"; 
+
 
 
 
 
 function ShareBox() {
-    const [shareMessage, setShareMessage] = useState("");
-    const [shareImage, setShareImage] = useState("");
+    const [tweetMessage, setTweetMessage] = useState("");
+    const [tweetImage, setTweetImage] = useState("");
+    
+    
+    const sendTweet = (e) => {
+        e.preventDefault();
+        console.log('clicked');
+    
+    }
 
     
 
@@ -17,22 +23,22 @@ function ShareBox() {
     return (
         <div className="tweetBox" >
             <form>
-                <div className="shareBox__input" >
+                <div className="tweetBox__input" >
                     <Avatar src="https://i.ibb.co/ZhcfZrz/dog2.png" />
                     <input
-                        onChange={(e) => setShareMessage(e.target.value)}
-                        value={shareMessage}
+                        onChange={(e) => setTweetMessage(e.target.value)}
+                        value={tweetMessage}
                         placeholder="What's happening?">
                     </input>
 
                 </div>
                 <input
-                    value={shareImage}
-                    onChange={(e) => setShareImage(e.target.value)}
-                    className="shareBox__imageInput"
+                    value={tweetImage}
+                    onChange={(e) => setTweetImage(e.target.value)}
+                    className="tweetBox__imageInput"
                     placeholder="Enter image URL"
                     type="text" />
-                <Button type="submit" className="shareBox__shareButton">Share</Button>
+                <Button onClick={sendTweet} type="submit" className="tweetBox__tweetButton">Share</Button>
             </form>
         </div>
     )

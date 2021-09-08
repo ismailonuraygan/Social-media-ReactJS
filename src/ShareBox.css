@@ -1,37 +1,37 @@
-.shareBox {
+.tweetBox {
     padding-bottom: 10px;
     border-bottom: 8px solid var(--custom-background);
     padding-right: 10px;
 }
 
-.shareBox > form  {
+.tweetBox > form  {
     display: flex;
     flex-direction: column;
 }
 
-.shareBox__input {
+.tweetBox__input {
     padding: 20px;
     display: flex;
 }
 
-.shareBox__input > input {
+.tweetBox__input > input {
     flex: 1;
     margin-left: 20px;
     font-size: 20px;
     border: none;
 }
 
-.shareBox__imageInput {
+.tweetBox__imageInput {
     border: none;
     padding: 10px;  
 }
 
 
 
-.shareBox__shareButton{
+.tweetBox__tweetButton{
     background-color: var(--custom-color) !important;
     border: none !important;
-    color: darkblue  !important;
+    color: white !important;
     font-weight: 900 !important;
     text-transform: inherit !important;
     border-radius: 30px !important;
