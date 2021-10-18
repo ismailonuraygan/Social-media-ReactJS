@@ -7,17 +7,35 @@ import { getFirestore } from 'firebase/firestore/lite';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyCdBwkKl6k6OmaMqNkN66sz7xNqPAij8DY",
-    authDomain: "social-media-reactjs-14851.firebaseapp.com",
-    projectId: "social-media-reactjs-14851",
-    storageBucket: "social-media-reactjs-14851.appspot.com",
-    messagingSenderId: "1048073024057",
-    appId: "1:1048073024057:web:e9c3015597e39ec96ed3e8",
-    measurementId: "G-6STHKG30MF"
-  };
+  apiKey: "AIzaSyD3Toq7DOllTPmscqvIdPib5yWrLI6QioU",
+  authDomain: "social2-5b18d.firebaseapp.com",
+  projectId: "social2-5b18d",
+  storageBucket: "social2-5b18d.appspot.com",
+  messagingSenderId: "1010829125086",
+  appId: "1:1010829125086:web:ed2d2d6a9ea9f8ecdde94f",
+  measurementId: "G-YLV4S9BDF4"
+};
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 export default db
+
+/* import firebase from "firebase";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyD3Toq7DOllTPmscqvIdPib5yWrLI6QioU",
+  authDomain: "social2-5b18d.firebaseapp.com",
+  projectId: "social2-5b18d",
+  storageBucket: "social2-5b18d.appspot.com",
+  messagingSenderId: "1010829125086",
+  appId: "1:1010829125086:web:ed2d2d6a9ea9f8ecdde94f",
+  measurementId: "G-YLV4S9BDF4"
+};
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
+
+export default db; */

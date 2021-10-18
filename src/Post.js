@@ -15,9 +15,10 @@ const Post = forwardRef(({
     text,
     image,
     avatar  
-}) => {
+}, ref) => {
+    console.log(displayName)
     return (
-        <div className = "post">
+        <div className = "post" ref={ref}>
             <div className = "post__avatar">
                 <Avatar src = {avatar} />
             </div>

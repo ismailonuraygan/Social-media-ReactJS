@@ -5,9 +5,6 @@ import { collection, addDoc } from "firebase/firestore/lite";
 import db from './firebase';
 
 
-
-
-
 function ShareBox() {
     const [tweetMessage, setTweetMessage] = useState("");
     const [tweetImage, setTweetImage] = useState("");
@@ -17,6 +14,15 @@ function ShareBox() {
         e.preventDefault();
         console.log('clicked');
         
+        /* db.collection("posts").add({
+            displayName : "Onur Aygan",
+            username: "ionuraygan",
+            verified: true,
+            text: tweetMessage,
+            image: tweetImage,
+            avatar: "https://i.ibb.co/ZhcfZrz/dog2.png"
+        }) */
+
         (  async (db) => {
             const docRef = await addDoc(collection(db, "posts"), {
                 displayName: "İsmail Onur Aygan",

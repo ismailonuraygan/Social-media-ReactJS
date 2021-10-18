@@ -10,6 +10,15 @@ import FlipMove from 'react-flip-move';
 function Feed() {
     const [posts, setPosts] = useState ([]);
 
+
+    /* useEffect(() => {
+        db.collection("posts").onSnapshot(snapshot => (
+            setPosts([snapshot.docs.map(doc => doc.data())])
+        ))
+    }, [])
+    console.log(posts);
+    console.log(posts.length) */
+
     useEffect(  () => {
         ( async (db1) => {
                 const postCol = collection(db1, 'posts');
